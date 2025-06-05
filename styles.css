@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 0 10px;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#cart-icon {
+  cursor: pointer;
+  background: #eee;
+  padding: 8px 12px;
+  border-radius: 4px;
+  user-select: none;
+}
+
+#cart-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.product h3 {
+  margin: 0 0 5px;
+}
+
+.product p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.qty-controls {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.qty-controls button {
+  background: #ddd;
+  border: none;
+  padding: 4px 8px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.qty-controls button:hover {
+  background: #bbb;
+}
+
+label {
+  margin-top: 15px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}

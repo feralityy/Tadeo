@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pallet Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Pallet Shop</h1>
+    <div id="cart-icon" onclick="toggleCartDropdown()">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+    <div id="cart-dropdown" class="hidden">
+      <div id="cart"></div>
+      <button onclick="location.href='checkout.html'">Checkout</button>
+    </div>
+  </header>
+
+  <main>
+    <h2>Bedroom Pallets</h2>
+    <div id="products">
+      <!-- Example products -->
+      <div class="product">
+        <h3>Classic Wooden Pallet</h3>
+        <p>$50</p>
+        <button onclick="addToCart('Classic Wooden Pallet', 50)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Modern White Pallet</h3>
+        <p>$65</p>
+        <button onclick="addToCart('Modern White Pallet', 65)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Rustic Oak Pallet</h3>
+        <p>$80</p>
+        <button onclick="addToCart('Rustic Oak Pallet', 80)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
